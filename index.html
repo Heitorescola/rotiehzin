@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotieh Fortune Clássica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="maquina-completa">
+        <div class="topo-maquina">
+            <h1>ROTIEH FORTUNE</h1>
+        </div>
+
+        <div class="corpo-maquina">
+            <div class="container">
+                <div class="grid-container">
+                    <div class="grid-cell" id="celula-1"></div>
+                    <div class="grid-cell" id="celula-2"></div>
+                    <div class="grid-cell" id="celula-3"></div>
+                    <div class="grid-cell" id="celula-4"></div>
+                    <div class="grid-cell" id="celula-5"></div>
+                    <div class="grid-cell" id="celula-6"></div>
+                    <div class="grid-cell" id="celula-7"></div>
+                    <div class="grid-cell" id="celula-8"></div>
+                    <div class="grid-cell" id="celula-9"></div>
+                </div>
+
+                <div class="painel-info">
+                    <p>Saldo: <span id="saldo">1000</span> moedas</p>
+                    <div class="aposta-container">
+                        <label for="aposta">Aposta:</label>
+                        <input type="number" id="aposta" value="10" min="10">
+                    </div>
+                    <div class="turbo-container">
+                        <button id="btn-turbo">Turbo</button>
+                        <input type="number" id="rodadas-turbo" value="1" min="1">
+                    </div>
+                </div>
+                <p class="mensagem" id="resultado"></p>
+            </div>
+            
+            <div class="alavanca-area">
+                <div class="alavanca" id="alavanca">
+                    <div class="alavanca-cabo"></div>
+                    <div class="alavanca-puxador"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fireworks-container left" id="fireworks-left"></div>
+    <div class="fireworks-container right" id="fireworks-right"></div>
+    
+    <audio id="musica-fundo" loop preload="auto">
+        <source src="audio/cassino.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <audio id="som-vitoria" preload="auto">
+        <source src="audio/Vitoria.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
