@@ -34,7 +34,7 @@ const tabelaDePremios = {
     '🪙': 10,
     '🛡️': 8,
     '⚔️': 5,
-    '🧙':
+    '🧙': 25,
 };
 
 // Variáveis de estado
